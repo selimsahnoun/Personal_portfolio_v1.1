@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "title": "Mercury",
+    "frontEnd": "87.9 Day",
+    "backEnd": "None",
+    "imageUrl": "./../assets/pictures/planets-website-images/mercury.png",
+    "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit qui ipsa rerum aperiam iusto? Ut qui velit numquam labore dolore odio adipisci delectus! Odio, voluptatibus quasi! Soluta, pariatur dolorum. <br /> <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat, laudantium sequi quas id tempore!v Commodi itaque, incidunt quisquam ducimus reiciendis perferendis quas neque voluptas quod obcaecati, tenetur error officia?"
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "title": "Venus",
+    "frontEnd": "87.9 Day",
+    "backEnd": "None",
+    "imageUrl": "./../assets/pictures/planets-website-images/venus.png",
+    "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit qui ipsa rerum aperiam iusto? Ut qui velit numquam labore dolore odio adipisci delectus! Odio, voluptatibus quasi! Soluta, pariatur dolorum. <br /> <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat, laudantium sequi quas id tempore!v Commodi itaque, incidunt quisquam ducimus reiciendis perferendis quas neque voluptas quod obcaecati, tenetur error officia?"
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "title": "Earth",
+    "frontEnd": "87.9 Day",
+    "backEnd": "None",
+    "imageUrl": "./../assets/pictures/planets-website-images/earth.png",
+    "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit qui ipsa rerum aperiam iusto? Ut qui velit numquam labore dolore odio adipisci delectus! Odio, voluptatibus quasi! Soluta, pariatur dolorum. <br /> <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat, laudantium sequi quas id tempore!v Commodi itaque, incidunt quisquam ducimus reiciendis perferendis quas neque voluptas quod obcaecati, tenetur error officia?"
+  }
+]

@@ -180,60 +180,19 @@
         </div>
         <div class="project-container">
           <div class="projects-small-box-container">
-            <div class="project-box">
+            <div
+              class="project-box"
+              v-for="(project, index) in projectList"
+              :key="project.id"
+              @click="changeProjectShown(index)"
+            >
               <div class="project-image">
-                <img
-                  src="./../assets/pictures/projects/project_1.jpeg"
-                  alt=""
-                />
+                <img :src="project.imageUrl" alt="" />
               </div>
               <div class="project-text">
-                <h3>Angular</h3>
-                <h3>Google API</h3>
-                <h3>Bootstrap</h3>
-              </div>
-            </div>
-            <div class="project-box">
-              <div class="project-image">
-                <img
-                  src="./../assets/pictures/projects/project_2.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="project-text">
-                <h3>Python</h3>
-                <h3>Vue 2</h3>
-                <h3>Axios</h3>
-                <h3>Bootstrap</h3>
-              </div>
-            </div>
-            <div class="project-box">
-              <div class="project-image">
-                <img
-                  src="./../assets/pictures/projects/project_3.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="project-text">
-                <h3>Vue 3</h3>
-                <h3>CSS/Rellax</h3>
-                <h3>Express JS</h3>
-                <h3>Solidity</h3>
-                <h3>Mongo DB</h3>
-              </div>
-            </div>
-            <div class="project-box">
-              <div class="project-image">
-                <img
-                  src="./../assets/pictures/projects/project_4.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="project-text">
-                <h3>Vue 3</h3>
-                <h3>CSS</h3>
-                <h3>Express JS</h3>
-                <h3>Mongo DB</h3>
+                <h3 v-for="(tech, index) in project.techList" :key="index">
+                  {{ tech }}
+                </h3>
               </div>
             </div>
           </div>
@@ -242,7 +201,7 @@
               <iframe
                 width="533"
                 height="300"
-                src="https://www.youtube.com/embed/2WBiUwKl7Vw"
+                :src="projectShowed.videoEmbedSrc"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -250,22 +209,23 @@
               ></iframe>
             </div>
             <div class="description-box">
-              <div class="description-title"><h2>F-Uber App</h2></div>
+              <div class="description-title">
+                <h2>{{ projectShowed.descriptionTitle }}</h2>
+              </div>
               <div class="description-text">
                 <p>
-                  A mock Uber Front End App for educational purposes. <br />It
-                  makes Google API calls to give the quickest route from Point A
-                  to Point B and a price according to the car type.
+                  {{ projectShowed.descriptionText }}
                 </p>
               </div>
               <div class="description-links">
                 <div class="url-row">
-                  <font-awesome-icon :icon="['fas', 'link']" /> : None
+                  <font-awesome-icon :icon="['fas', 'link']" /> :
+                  {{ projectShowed.linkUrl }}
                 </div>
                 <div class="github-row">
                   <font-awesome-icon :icon="['fab', 'github']" /> :
                   <a
-                    href="https://github.com/selimsahnoun/Fake-Uber"
+                    :href="projectShowed.githubUrl"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Click here</a
@@ -303,6 +263,7 @@
 </template>
 
 <script>
+import projectList from "./../assets/informations/projects.json";
 export default {
   name: "Home",
   data() {
@@ -311,13 +272,16 @@ export default {
       topBar: null,
       navigation: null,
       homeMain: null,
+      projectShowed: null,
+      projectList: projectList,
     };
   },
-  mounted() {
+  created() {
     this.toggle = document.querySelector(".toggle");
     this.topBar = document.querySelector(".home-topbar");
     this.navigation = document.querySelector(".navigation");
     this.homeMain = document.querySelector(".home-main");
+    this.projectShowed = projectList[0];
   },
   methods: {
     activeClass() {
@@ -325,6 +289,9 @@ export default {
       this.topBar.classList.toggle("active");
       this.navigation.classList.toggle("active");
       this.homeMain.classList.toggle("active");
+    },
+    changeProjectShown(Id) {
+      this.projectShowed = this.projectList[Id];
     },
   },
 };

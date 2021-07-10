@@ -1,29 +1,42 @@
 [
   {
+    "id": 0,
+    "descriptionTitle": "Mock Uber App",
+    "descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
+    "videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+    "linkUrl": "None",
+    "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
+    "imageUrl": "./src/assets/pictures/projects/project_1.jpeg",
+    "techList": ["Angular", "Google API", "Bootstrap"]
+  },
+  {
     "id": 1,
-    "number": "01",
-    "title": "Mercury",
-    "frontEnd": "87.9 Day",
-    "backEnd": "None",
-    "imageUrl": "./../assets/pictures/planets-website-images/mercury.png",
-    "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit qui ipsa rerum aperiam iusto? Ut qui velit numquam labore dolore odio adipisci delectus! Odio, voluptatibus quasi! Soluta, pariatur dolorum. <br /> <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat, laudantium sequi quas id tempore!v Commodi itaque, incidunt quisquam ducimus reiciendis perferendis quas neque voluptas quod obcaecati, tenetur error officia?"
+    "descriptionTitle": "Pycoin Crypto-currency",
+    "descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
+    "videoEmbedSrc": "https://www.youtube.com/embed/AJNHsBMKJDQ",
+    "linkUrl": "None",
+    "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
+    "imageUrl": "./src/assets/pictures/projects/project_2.jpeg",
+    "techList": ["Python", "Vue 2", "Axios", "Bootstrap"]
   },
   {
     "id": 2,
-    "number": "02",
-    "title": "Venus",
-    "frontEnd": "87.9 Day",
-    "backEnd": "None",
-    "imageUrl": "./../assets/pictures/planets-website-images/venus.png",
-    "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit qui ipsa rerum aperiam iusto? Ut qui velit numquam labore dolore odio adipisci delectus! Odio, voluptatibus quasi! Soluta, pariatur dolorum. <br /> <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat, laudantium sequi quas id tempore!v Commodi itaque, incidunt quisquam ducimus reiciendis perferendis quas neque voluptas quod obcaecati, tenetur error officia?"
+    "descriptionTitle": "Etherente",
+    "descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
+    "videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+    "linkUrl": "None",
+    "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
+    "imageUrl": "./src/assets/pictures/projects/project_3.jpeg",
+    "techList": ["Vue 3", "CSS/Rellax", "Express JS", "Solidity", "Mongo DB"]
   },
   {
     "id": 3,
-    "number": "03",
-    "title": "Earth",
-    "frontEnd": "87.9 Day",
-    "backEnd": "None",
-    "imageUrl": "./../assets/pictures/planets-website-images/earth.png",
-    "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit qui ipsa rerum aperiam iusto? Ut qui velit numquam labore dolore odio adipisci delectus! Odio, voluptatibus quasi! Soluta, pariatur dolorum. <br /> <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellat, laudantium sequi quas id tempore!v Commodi itaque, incidunt quisquam ducimus reiciendis perferendis quas neque voluptas quod obcaecati, tenetur error officia?"
+    "descriptionTitle": "Fatma's Project",
+    "descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
+    "videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+    "linkUrl": "None",
+    "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
+    "imageUrl": "./src/assets/pictures/projects/project_4.jpeg",
+    "techList": ["Vue 3", "CSS", "Express JS", "Mongo DB"]
   }
 ]

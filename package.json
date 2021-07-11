@@ -2,7 +2,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --watch",
+    "build": "vite build",
+    "buildfordev": "vite build --watch",
     "serve": "vite preview"
   },
   "dependencies": {

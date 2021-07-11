@@ -185,7 +185,7 @@
               @click="changeProjectShown(index)"
             >
               <div class="project-image">
-                <img :src="`${publicPath}project_${index + 1}.jpeg`" />
+                <img :src="`${publicPath}project_${project.id}.jpeg`" />
               </div>
               <div class="project-text">
                 <h3 v-for="(tech, index) in project.techList" :key="index">

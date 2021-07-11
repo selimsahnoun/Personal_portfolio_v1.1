@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <div class="navigation">
+    <div class="navigation" :class="activeState">
       <ul>
         <li><a href="#home-banner" @click="activeClass">Home</a></li>
         <li><a href="#about-me" @click="activeClass">About Me</a></li>
@@ -9,10 +9,10 @@
         <li><a href="#contact" @click="activeClass">Contact</a></li>
       </ul>
     </div>
-    <div class="home-main">
-      <div class="home-topbar">
-        <a href="#" class="home-logo">Portfolio</a>
-        <div class="toggle" @click="activeClass">
+    <div class="home-main" :class="activeState">
+      <div class="home-topbar" :class="activeState">
+        <a href="#home-banner" class="home-logo">Portfolio</a>
+        <div class="toggle" @click="activeClass" :class="activeState">
           <font-awesome-icon icon="bars" />
         </div>
       </div>
@@ -267,6 +267,7 @@ export default {
   data() {
     return {
       toggle: null,
+      activeState: null,
       topBar: null,
       navigation: null,
       homeMain: null,
@@ -276,18 +277,11 @@ export default {
     };
   },
   created() {
-    this.toggle = document.querySelector(".toggle");
-    this.topBar = document.querySelector(".home-topbar");
-    this.navigation = document.querySelector(".navigation");
-    this.homeMain = document.querySelector(".home-main");
     this.projectShowed = projectList[0];
   },
   methods: {
     activeClass() {
-      this.toggle.classList.toggle("active");
-      this.topBar.classList.toggle("active");
-      this.navigation.classList.toggle("active");
-      this.homeMain.classList.toggle("active");
+      this.activeState = this.activeState === "active" ? "" : "active";
     },
     changeProjectShown(Id) {
       this.projectShowed = this.projectList[Id];

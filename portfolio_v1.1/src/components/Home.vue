@@ -23,14 +23,12 @@
             <img src="./../assets/pictures/profil-picture.jpg" alt="" />
           </div>
           <h3>Selim Sahnoun</h3>
+
           <p>
             I'm an engineer, fullstack web developper, passionate about finance
             and blockchain technology
           </p>
-          <a
-            href="./../assets/documents/CV_Selim_SAHNOUN.pdf"
-            class="cv-button"
-            download="CV Selim SAHNOUN"
+          <a href="" class="cv-button" download="CV Selim SAHNOUN"
             >Download my CV</a
           >
           <ul class="socialMedia">
@@ -153,7 +151,7 @@
             </p>
           </div>
           <div class="techBox">
-            <img src="./../assets/pictures/technologies/mongodb.png" alt="" />
+            <img src="./../assets/pictures/technologies/mongo_db.png" alt="" />
             <h2>Mongo DB</h2>
             <p>
               Database that I appreciate the most. Project 03 was done with
@@ -187,7 +185,7 @@
               @click="changeProjectShown(index)"
             >
               <div class="project-image">
-                <img :src="project.imageUrl" alt="" />
+                <img :src="`${publicPath}project_${index + 1}.jpeg`" />
               </div>
               <div class="project-text">
                 <h3 v-for="(tech, index) in project.techList" :key="index">
@@ -274,6 +272,7 @@ export default {
       homeMain: null,
       projectShowed: null,
       projectList: projectList,
+      publicPath: import.meta.env.BASE_URL,
     };
   },
   created() {
@@ -292,6 +291,9 @@ export default {
     },
     changeProjectShown(Id) {
       this.projectShowed = this.projectList[Id];
+    },
+    getImage(path) {
+      return path;
     },
   },
 };

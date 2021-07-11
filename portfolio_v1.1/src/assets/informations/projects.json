@@ -6,7 +6,6 @@
     "videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
     "linkUrl": "None",
     "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
-    "imageUrl": "./src/assets/pictures/projects/project_1.jpeg",
     "techList": ["Angular", "Google API", "Bootstrap"]
   },
   {
@@ -16,17 +15,15 @@
     "videoEmbedSrc": "https://www.youtube.com/embed/AJNHsBMKJDQ",
     "linkUrl": "None",
     "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
-    "imageUrl": "./src/assets/pictures/projects/project_2.jpeg",
     "techList": ["Python", "Vue 2", "Axios", "Bootstrap"]
   },
   {
     "id": 2,
-    "descriptionTitle": "Etherente",
+    "descriptionTitle": "Etherent",
     "descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
     "videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
     "linkUrl": "None",
     "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
-    "imageUrl": "./src/assets/pictures/projects/project_3.jpeg",
     "techList": ["Vue 3", "CSS/Rellax", "Express JS", "Solidity", "Mongo DB"]
   },
   {
@@ -36,7 +33,6 @@
     "videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
     "linkUrl": "None",
     "githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
-    "imageUrl": "./src/assets/pictures/projects/project_4.jpeg",
     "techList": ["Vue 3", "CSS", "Express JS", "Mongo DB"]
   }
 ]

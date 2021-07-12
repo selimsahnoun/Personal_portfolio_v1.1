@@ -1,0 +1,68 @@
+//--------------Technologies Section--------------------//
+#technologies {
+  scroll-margin-top: 30px;
+}
+.section-title {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 50px;
+    height: 1px;
+    background: var(--first_theme_color);
+  }
+}
+.tech-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 40px 0;
+  .techBox {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    padding: 20px;
+    background-color: var(--second_theme_color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 50px calc(100% - 50px -40%) 40%;
+    img {
+      max-width: 50px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.1em;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      font-weight: 600;
+      color: var(--first_theme_color);
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p {
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        font-weight: 800;
+      }
+    }
+  }
+}

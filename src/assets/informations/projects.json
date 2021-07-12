@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "descriptionTitle": "Etherent",
+    "descriptionTitle": "Etherente",
     "descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
     "videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
     "linkUrl": "None",

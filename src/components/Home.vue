@@ -72,8 +72,23 @@
               quas? Nisi, praesentium mollitia.
             </p>
           </div>
-          <div class="imgBox">
-            <img src="./../assets/pictures/profil-picture.jpg" alt="" />
+          <div class="studies-container">
+            <div class="banner">
+              <font-awesome-icon :icon="['fas', 'user-graduate']" />
+            </div>
+            <div class="studies-wrapper">
+              <div
+                class="diploma-box"
+                v-for="(diploma, index) in diplomas"
+                :key="index"
+              >
+                <div class="diploma-year">{{ diploma.diplomaYear }}</div>
+                <div class="diploma-title">{{ diploma.diplomaTitle }}</div>
+                <div class="diploma-school">{{ diploma.diplomaSchool }}</div>
+                <div class="diploma-town">{{ diploma.diplomaTown }}</div>
+                <div class="diploma-text">{{ diploma.diplomaText }}</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -82,8 +97,8 @@
         <div class="section-title">
           <h2>Technologies</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-            officiis
+            I can work with these technologies and I've built projects with each
+            of those.
           </p>
         </div>
         <div class="tech-content">
@@ -162,8 +177,14 @@
             <img src="./../assets/pictures/technologies/postgres.png" alt="" />
             <h2>Postgres</h2>
             <p>
-              I used postgres to build the thesis project, a magic items
-              marketplace.
+              I used postgres to build the
+              <a
+                href="https://github.com/selimsahnoun/skymage/tree/main/backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >thesis project</a
+              >
+              thesis project, a magic items marketplace.
             </p>
           </div>
         </div>
@@ -237,23 +258,39 @@
       <!-- Contact Section  -------------->
       <section class="contact adjust" id="contact">
         <div class="section-title">
-          <h2>Let's say hi</h2>
-          <p>
-            Mettre ici le rouleau rellaxMettre ici le rouleau rellaxMettre ici
-            le rouleau rellax
-          </p>
+          <h2>Let's say hi !</h2>
+          <p>Feel free to say hi, I'll gladly get back to you</p>
         </div>
         <div class="contactForm">
-          <div class="contact-first-row">
-            <input type="text" name="" placeholder="Name" />
-            <input type="text" name="" placeholder="Email Address" />
+          <form class="contact-form" @submit.prevent="sendEmail">
+            <div class="contact-first-row">
+              <input type="text" name="user_name" placeholder="Name" />
+              <input
+                type="text"
+                name="user_email"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="contact-second-row">
+              <textarea placeholder="Message" name="message"></textarea>
+            </div>
+            <div class="contact-second-row">
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+        <div v-if="modalState">
+          <div class="success-message-container">
+            <div class="success-message">
+              <div class="close" @click="hideModal">
+                <font-awesome-icon :icon="['fas', 'times']" />
+              </div>
+              Thank you for your E-mail. <br />
+              <br />
+              I'll get back to you ASAP
+            </div>
           </div>
-          <div class="contact-second-row">
-            <textarea placeholder="Message"></textarea>
-          </div>
-          <div class="contact-second-row">
-            <input type="submit" value="Send" />
-          </div>
+          <div id="overlay" @click="hideModal" :class="overlayClass"></div>
         </div>
       </section>
     </div>
@@ -261,18 +298,19 @@
 </template>
 
 <script>
+import emailjs from "emailjs-com";
 import projectList from "./../assets/informations/projects.json";
+import diplomas from "./../assets/informations/diplomas.json";
 export default {
   name: "Home",
   data() {
     return {
-      toggle: null,
+      modalState: false,
       activeState: null,
-      topBar: null,
-      navigation: null,
-      homeMain: null,
       projectShowed: null,
       projectList: projectList,
+      diplomas: diplomas,
+      overlayClass: "",
       publicPath: import.meta.env.BASE_URL,
     };
   },
@@ -280,14 +318,39 @@ export default {
     this.projectShowed = projectList[0];
   },
   methods: {
+    async sendEmail(e) {
+      const sentEmail = await emailjs
+        .sendForm(
+          "service_pr79r2k",
+          "contact_form",
+          e.target,
+          "user_87Izn1aq18kIRmMPX2yrn"
+        )
+        .then(
+          (result) => {
+            console.log("SUCCESS!", result.status, result.text);
+            return true;
+          },
+          (error) => {
+            console.log("FAILED...", error);
+            return false;
+          }
+        );
+      sentEmail ? this.showModal() : "";
+    },
     activeClass() {
       this.activeState = this.activeState === "active" ? "" : "active";
     },
     changeProjectShown(Id) {
       this.projectShowed = this.projectList[Id];
     },
-    getImage(path) {
-      return path;
+    showModal() {
+      this.modalState = true;
+      this.overlayClass = "active-overlay";
+    },
+    hideModal() {
+      this.modalState = false;
+      this.overlayClass = "";
     },
   },
 };

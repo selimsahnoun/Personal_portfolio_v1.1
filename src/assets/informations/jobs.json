@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "diplomaYear": "2019",
+    "diplomaSchool": "PRIMONIAL REIM (~3 years)",
+    "diplomaLink": "https://www.primonialreim.com/fr/",
+    "diplomaTown": "Paris",
+    "diplomaTitle": "Head of reporting",
+    "diplomaText": "Worked in the Fund Management Team in a French Real Estate Investment Fund"
+  },
+  {
+    "id": 1,
+    "diplomaYear": "2016",
+    "diplomaSchool": "SOCIETE GENERALE (6 months)",
+    "diplomaLink": "https://wholesale.banking.societegenerale.com/en/",
+    "diplomaTown": "Paris",
+    "diplomaTitle": "M&A Internship",
+    "diplomaText": "Worked in the investment banking division, mainly doing financial analysis on markets and companies"
+  },
+  {
+    "id": 2,
+    "diplomaYear": "2014",
+    "diplomaSchool": "AMUNDI (14 months)",
+    "diplomaLink": "https://www.amundi.fr/fr_instit/Expertises/Amundi-Actifs-Reels/Private-Equity",
+    "diplomaTown": "Paris",
+    "diplomaTitle": "Private equity apprentice",
+    "diplomaText": "Worked in the Private Equity division, mainly doing financial reporting on companies"
+  },
+  {
+    "id": 3,
+    "diplomaYear": "2014",
+    "diplomaSchool": "THE ABRAAJ GROUP (6 months)",
+    "diplomaLink": "https://en.wikipedia.org/wiki/The_Abraaj_Group",
+    "diplomaTown": "Paris",
+    "diplomaTitle": "Private equity intern",
+    "diplomaText": "Worked in the Private Equity division, mainly doing financial analysis on markets and companies"
+  }
+]

@@ -28,7 +28,11 @@
             I'm an engineer, fullstack web developper, passionate about finance
             and blockchain technology
           </p>
-          <a href="" class="cv-button" download="CV Selim SAHNOUN"
+          <a
+            href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/cv_selim_sahnoun.pdf?alt=media&token=ba0a0ad9-e250-42b6-9dc5-9ef22cabfcf0"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cv-button"
             >Download my CV</a
           >
           <ul class="socialMedia">
@@ -41,7 +45,7 @@
               /></a>
             </li>
             <li>
-              <a href=""
+              <a href="#contact"
                 ><font-awesome-icon :icon="['fas', 'envelope-open-text']"
               /></a>
             </li>
@@ -74,19 +78,32 @@
           </div>
           <div class="studies-container">
             <div class="banner">
-              <font-awesome-icon :icon="['fas', 'user-graduate']" />
+              <font-awesome-icon
+                :icon="['fas', 'user-graduate']"
+                :class="studyBanner"
+                @click="toggleExperience"
+              />
+              /
+              <font-awesome-icon
+                :icon="['fas', 'briefcase']"
+                :class="workBanner"
+                @click="toggleExperience"
+              />
             </div>
             <div class="studies-wrapper">
               <div
                 class="diploma-box"
                 v-for="(diploma, index) in diplomas"
                 :key="index"
+                @click="showSchool(diploma.diplomaLink)"
               >
                 <div class="diploma-year">{{ diploma.diplomaYear }}</div>
                 <div class="diploma-title">{{ diploma.diplomaTitle }}</div>
-                <div class="diploma-school">{{ diploma.diplomaSchool }}</div>
                 <div class="diploma-town">{{ diploma.diplomaTown }}</div>
-                <div class="diploma-text">{{ diploma.diplomaText }}</div>
+                <div class="diploma-school">{{ diploma.diplomaSchool }}</div>
+                <div class="diploma-text">
+                  <p>{{ diploma.diplomaText }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -301,6 +318,8 @@
 import emailjs from "emailjs-com";
 import projectList from "./../assets/informations/projects.json";
 import diplomas from "./../assets/informations/diplomas.json";
+import jobs from "./../assets/informations/jobs.json";
+
 export default {
   name: "Home",
   data() {
@@ -312,12 +331,17 @@ export default {
       diplomas: diplomas,
       overlayClass: "",
       publicPath: import.meta.env.BASE_URL,
+      studyBanner: "showBanner",
+      workBanner: "hideBanner",
     };
   },
   created() {
     this.projectShowed = projectList[0];
   },
   methods: {
+    showSchool(link) {
+      window.open(link, "_blank");
+    },
     async sendEmail(e) {
       const sentEmail = await emailjs
         .sendForm(
@@ -351,6 +375,17 @@ export default {
     hideModal() {
       this.modalState = false;
       this.overlayClass = "";
+    },
+    toggleExperience() {
+      this.studyBanner =
+        this.studyBanner === "showBanner" ? "hideBanner" : "showBanner";
+      this.workBanner =
+        this.workBanner === "showBanner" ? "hideBanner" : "showBanner";
+      if (this.diplomas[0].diplomaSchool === "E.N.I.T.") {
+        this.diplomas = jobs;
+      } else {
+        this.diplomas = diplomas;
+      }
     },
   },
 };

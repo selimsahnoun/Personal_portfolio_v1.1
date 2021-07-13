@@ -7,6 +7,7 @@ import {
   faLink,
   faTimes,
   faUserGraduate,
+  faBriefcase,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -14,6 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
   faBars,
   faEnvelopeOpenText,
+  faBriefcase,
   faLinkedin,
   faGithub,
   faLink,

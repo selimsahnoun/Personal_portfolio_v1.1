@@ -6,34 +6,42 @@
     "diplomaLink": "http://www.enit.rnu.tn/fr/formation/genie_civil.php",
     "diplomaTown": "Tunis",
     "diplomaTitle": "Civil Engineering",
-    "diplomaText": "Civil Engineering degree, specialized in buildings"
+    "diplomaText": "Civil Engineering degree, thesis on prestressed concrete"
   },
   {
-    "id": 0,
-    "diplomaYear": "2013",
-    "diplomaTown": "Tunis",
-    "diplomaTitle": "Civil Engineering",
-    "diplomaText": "Civil Engineering degree, specialized in buildings"
+    "id": 1,
+    "diplomaYear": "2014",
+    "diplomaTown": "Paris",
+    "diplomaSchool": "Paris Dauphine",
+    "diplomaLink": "https://dauphine.psl.eu/en/training/masters-degrees/finance/masters-year-2-banking-and-finance-224",
+    "diplomaTitle": "Banking & Finance",
+    "diplomaText": "Master's degree in Finance, thesis on Private Equity"
   },
   {
-    "id": 0,
-    "diplomaYear": "2013",
-    "diplomaTown": "Tunis",
-    "diplomaTitle": "Civil Engineering",
-    "diplomaText": "Civil Engineering degree, specialized in buildings"
+    "id": 2,
+    "diplomaYear": "2015",
+    "diplomaTown": "Paris",
+    "diplomaSchool": "Paris Dauphine",
+    "diplomaLink": "https://dauphine.psl.eu/en/training/masters-degrees/finance/masters-year-2-asset-management-222",
+    "diplomaTitle": "Asset Management",
+    "diplomaText": "Master's degree in Asset Management, thesis on Private Equity"
   },
   {
-    "id": 0,
-    "diplomaYear": "2013",
+    "id": 3,
+    "diplomaYear": "2020",
     "diplomaTown": "Tunis",
-    "diplomaTitle": "Civil Engineering",
-    "diplomaText": "Civil Engineering degree, specialized in buildings"
+    "diplomaSchool": "HackReactor/RBK",
+    "diplomaLink": "https://www.hackreactor.com/",
+    "diplomaTitle": "JS Fullstack",
+    "diplomaText": "4 months Fullstack Javascript bootcamp in intensive format"
   },
   {
-    "id": 0,
-    "diplomaYear": "2013",
-    "diplomaTown": "Tunis",
-    "diplomaTitle": "Civil Engineering",
-    "diplomaText": "Civil Engineering degree, specialized in buildings"
+    "id": 4,
+    "diplomaYear": "2021",
+    "diplomaTown": "Paris",
+    "diplomaSchool": "Alyra",
+    "diplomaLink": "https://alyra.fr/",
+    "diplomaTitle": "Blockchain Dev.",
+    "diplomaText": "Blockchain bootcamp. \n Currently working on the thesis Dapp"
   }
 ]

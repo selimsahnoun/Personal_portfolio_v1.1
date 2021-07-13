@@ -66,7 +66,7 @@
       width: 80%;
       min-width: 250px;
     }
-    .imgBox {
+    .studies-container {
       margin: 40px 0 40px 0;
       width: 80%;
       min-width: 250px;
@@ -100,8 +100,18 @@
       grid-template-columns: 533px 300px;
       grid-template-rows: 100%;
     }
+    .studies-container {
+      .studies-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   }
   .home-main {
+    .studies-container {
+      .studies-wrapper {
+        grid-template-columns: 100%;
+      }
+    }
     .clicked-project-box {
       width: 533px;
       height: 530px;

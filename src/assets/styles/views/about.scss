@@ -3,8 +3,10 @@
 .about-content {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   margin-top: 40px;
   margin-right: 40px;
+  padding-bottom: 10px;
   .about-text-box {
     width: 35%;
     min-width: 35%;
@@ -20,6 +22,8 @@
     flex-direction: column;
     .banner {
       margin: auto;
+      font-size: 36px;
+      padding-bottom: 20px;
     }
     .studies-wrapper {
       width: 100%;
@@ -27,27 +31,69 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
+
+      .diploma-box:hover {
+        transform: scale(1.1);
+      }
       .diploma-box {
+        margin: auto;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px var(--first_theme_color);
         position: relative;
         width: 100%;
+        max-width: 400px;
+        min-width: 245px;
         height: 150px;
-        background: whitesmoke;
+        background: white;
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 20% 20% 60%;
         justify-content: center;
         align-items: center;
         .diploma-year {
-          margin: auto;
+          margin-left: auto;
+          margin-right: 10px;
+          font-size: 1.1em;
+          font-weight: 700;
         }
         .diploma-text {
-          margin: auto;
+          margin-top: 0;
+          margin-bottom: auto;
+          padding: 0 10px 0 10px;
           grid-column-start: 1;
           grid-column-end: 3;
+          text-align: center;
+          p {
+            white-space: pre-line;
+          }
+        }
+        .diploma-title {
+          margin-left: 0;
+          margin-right: auto;
+          font-size: 0.9em;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        .diploma-town {
+          font-size: 0.9em;
+          font-weight: 300;
+          font-style: italic;
+          margin-top: 0;
+          margin-left: auto;
+          margin-right: 10px;
+          padding-left: 10px;
+          margin-bottom: auto;
+          text-align: center;
         }
         .diploma-school {
-          margin: auto;
+          font-size: 0.9em;
+          font-weight: 300;
+          margin-left: 0;
+          margin-right: auto;
+          margin-top: 0;
+          margin-bottom: auto;
           text-align: center;
+          transform: all 0.5s;
         }
       }
     }
@@ -55,4 +101,14 @@
 }
 #about-me {
   scroll-margin-top: 30px;
+}
+.showBanner {
+  font-size: 1.2em;
+  opacity: 1;
+  cursor: pointer;
+}
+.hideBanner {
+  font-size: 0.9em;
+  opacity: 0.5;
+  cursor: pointer;
 }

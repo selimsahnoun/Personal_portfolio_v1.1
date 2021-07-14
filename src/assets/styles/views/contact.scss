@@ -1,104 +1,104 @@
 //--------------Contact Section--------------------------//
-#contact {
-  scroll-margin-top: 30px;
-}
+// #contact {
+//   scroll-margin-top: 30px;
+// }
 .contact {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  .contactForm {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    margin-top: 20px;
-    .contact-first-row {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-      margin-top: 20px;
-      input {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        outline: none;
-        color: var(--first_theme_color);
-        background: var(--second_theme_color);
-        font-size: 16px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      }
-    }
-    .contact-second-row {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      textarea {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        outline: none;
-        color: var(--first_theme_color);
-        background: var(--second_theme_color);
-        font-size: 16px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        resize: none;
-        height: 200px;
-      }
-      input[type="submit"] {
-        background: var(--first_theme_color);
-        color: var(--second_theme_color);
-        padding: 10px 30px;
-        display: inline-block;
-        font-weight: 500;
-        letter-spacing: 2px;
-        cursor: pointer;
-        font-size: 16px;
-        text-transform: uppercase;
-        max-width: 150px;
-        border: none;
-      }
-    }
-  }
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	.contactForm {
+		position: relative;
+		width: 100%;
+		max-width: 700px;
+		margin-top: 20px;
+		.contact-first-row {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+			margin-top: 20px;
+			input {
+				width: 100%;
+				padding: 10px;
+				border: none;
+				outline: none;
+				color: var(--first_theme_color);
+				background: var(--second_theme_color);
+				font-size: 16px;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+		}
+		.contact-second-row {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+			textarea {
+				width: 100%;
+				padding: 10px;
+				border: none;
+				outline: none;
+				color: var(--first_theme_color);
+				background: var(--second_theme_color);
+				font-size: 16px;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				resize: none;
+				height: 200px;
+			}
+			input[type='submit'] {
+				background: var(--first_theme_color);
+				color: var(--second_theme_color);
+				padding: 10px 30px;
+				display: inline-block;
+				font-weight: 500;
+				letter-spacing: 2px;
+				cursor: pointer;
+				font-size: 16px;
+				text-transform: uppercase;
+				max-width: 150px;
+				border: none;
+			}
+		}
+	}
 }
 .success-message-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  color: var(--first_theme_color);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	color: var(--first_theme_color);
 }
 .success-message {
-  background: var(--second_theme_color);
-  box-shadow: 2px 2px 10px var(--first_theme_color);
-  width: 400px;
-  height: 200px;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-  }
+	background: var(--second_theme_color);
+	box-shadow: 2px 2px 10px var(--first_theme_color);
+	width: 400px;
+	height: 200px;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.close {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		font-size: 24px;
+		cursor: pointer;
+	}
 }
 #overlay {
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba($color: #000000, $alpha: 0.5);
-  pointer-events: none;
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba($color: #000000, $alpha: 0.5);
+	pointer-events: none;
 }
 #overlay.active-overlay {
-  opacity: 1;
-  pointer-events: all;
+	opacity: 1;
+	pointer-events: all;
 }

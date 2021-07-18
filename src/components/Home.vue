@@ -2,16 +2,41 @@
 	<div class="home-container">
 		<div class="navigation" :class="activeState">
 			<ul>
-				<li><a href="#home-banner" @click="activeClass">Home</a></li>
-				<li><a href="#about-me" @click="activeClass">About Me</a></li>
-				<li><a href="#technologies" @click="activeClass">Technologies</a></li>
-				<li><a href="#projects" @click="activeClass">Projects</a></li>
-				<li><a href="#contact" @click="activeClass">Contact</a></li>
+				<li>
+					<a href="#home-banner" @click="activeClass">{{
+						language.navigation.home
+					}}</a>
+				</li>
+				<li>
+					<a href="#about-me" @click="activeClass">{{
+						language.navigation.aboutMe
+					}}</a>
+				</li>
+				<li>
+					<a href="#technologies" @click="activeClass">{{
+						language.navigation.technologies
+					}}</a>
+				</li>
+				<li>
+					<a href="#projects" @click="activeClass">{{
+						language.navigation.projects
+					}}</a>
+				</li>
+				<li>
+					<a href="#contact" @click="activeClass">{{
+						language.navigation.contact
+					}}</a>
+				</li>
 			</ul>
 		</div>
 		<div class="home-main" :class="activeState">
 			<div class="home-topbar" :class="activeState">
 				<a href="#home-banner" class="home-logo">Portfolio</a>
+				<div class="language">
+					<div :class="frenchLanguage" @click="toggleLanguage">FR</div>
+					/
+					<div :class="englishLanguage" @click="toggleLanguage">EN</div>
+				</div>
 				<div class="toggle" @click="activeClass" :class="activeState">
 					<font-awesome-icon icon="bars" />
 				</div>
@@ -28,15 +53,14 @@
 					<h3>Selim Sahnoun</h3>
 
 					<p>
-						I'm an engineer, fullstack web developper, passionate about finance
-						and blockchain technology
+						{{ language.banner.bannerContent }}
 					</p>
 					<a
 						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/cv_selim_sahnoun.pdf?alt=media&token=ba0a0ad9-e250-42b6-9dc5-9ef22cabfcf0"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="cv-button"
-						>Download my CV</a
+						>Curriculum Vitae</a
 					>
 					<ul class="socialMedia">
 						<li>
@@ -58,21 +82,12 @@
 			<!-- About Me Section  -------------->
 			<section class="about-me adjust" id="about-me">
 				<div class="section-title">
-					<h2>About me</h2>
+					<h2>{{ language.aboutMe.sectionTitle }}</h2>
 				</div>
 				<div class="about-content">
 					<div class="about-text-box">
 						<p>
-							Hey there! Welcome to my website. <br />
-							<br />
-							I'm Selim, I was born in Tunisia and currently living in Paris.<br />
-							<br />
-							I am a civil engineer who specialized in finance. Last year, I
-							decided to learn how to code. It's been an amazing journey and I
-							love it. <br />
-							<br />
-							I'm currently working freelance and looking for a job as a
-							developper (Front end And/Or Back end)
+							{{ language.aboutMe.sectionText }}
 						</p>
 					</div>
 					<div class="studies-container">
@@ -111,52 +126,36 @@
 			<!-- Technologies Section  ---------->
 			<section class="technologies adjust" id="technologies">
 				<div class="section-title">
-					<h2>Technologies</h2>
+					<h2>{{ language.technologies.sectionTitle }}</h2>
 					<p>
-						I can work with these technologies and I've built projects with each
-						of those.
+						{{ language.technologies.sectionText }}
 					</p>
 				</div>
 				<div class="tech-content">
-					<div class="techBox">
+					<div
+						class="techBox"
+						v-for="(tech, index) in language.technologies.list"
+						:key="index"
+					>
 						<img
-							src="./../assets/pictures/technologies/javascript.png"
+							:src="`${publicPath}${tech.techImage}`"
 							alt=""
-							style="border: 1px solid rgba(0, 0, 0, 0.19)"
+							:style="`${tech.ImgStyle}`"
 						/>
-						<h2>Javascript</h2>
-						<p>Self taught at first then I did a hackreactor bootcamp.</p>
+						<h2>{{ tech.techTitle }}</h2>
+						<p>{{ tech.techText }}</p>
 					</div>
 					<div class="techBox">
-						<img src="./../assets/pictures/technologies/python.jpeg" alt="" />
-						<h2>Python</h2>
+						<img src="./../assets/pictures/technologies/postgres.png" alt="" />
+						<h2>Postgres</h2>
 						<p>
-							Self taught, I built a blockchain crypto-currency ui, with Python
-							(project 02)
-						</p>
-					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/angular.png" alt="" />
-						<h2>Angular JS</h2>
-						<p>
-							Self taught, I built a mock Front End Uber project, with a Google
-							API call
-						</p>
-					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/vue.png" alt="" />
-						<h2>Vue JS</h2>
-						<p>
-							Self taught, the framework that I appreciate the most, I write
-							mainly with Vue 2 & 3
-						</p>
-					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/solidity.svg" alt="" />
-						<h2>solidity</h2>
-						<p>
-							After a BlockChain bootcamp in 2020, I built a real estate token
-							exchange plateform (project 03)
+							I used postgres to build the
+							<a
+								href="https://github.com/selimsahnoun/skymage/tree/main/backend"
+								target="_blank"
+								rel="noopener noreferrer"
+								>thesis project</a
+							>, a magic items marketplace.
 						</p>
 					</div>
 					<div class="techBox">
@@ -173,44 +172,14 @@
 							>
 						</p>
 					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/react.png" alt="" />
-						<h2>React JS</h2>
-						<p>
-							First framework that I practiced and did several projects with it
-							during the hackreactor bootcamp
-						</p>
-					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/mongo_db.png" alt="" />
-						<h2>Mongo DB</h2>
-						<p>
-							Database that I appreciate the most. Project 03 was done with
-							Mongo Atlas as a database
-						</p>
-					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/postgres.png" alt="" />
-						<h2>Postgres</h2>
-						<p>
-							I used postgres to build the
-							<a
-								href="https://github.com/selimsahnoun/skymage/tree/main/backend"
-								target="_blank"
-								rel="noopener noreferrer"
-								>thesis project</a
-							>
-							thesis project, a magic items marketplace.
-						</p>
-					</div>
 				</div>
 			</section>
 			<!-- Projects Section  -------------->
 			<section class="projects adjust" id="projects">
 				<div class="section-title">
-					<h2>projects</h2>
+					<h2>{{ language.projects.sectionTitle }}</h2>
 					<p>
-						Projects I've done so far. Either by personal work or freelancing.
+						{{ language.projects.sectionText }}
 					</p>
 				</div>
 				<div class="project-container">
@@ -274,18 +243,14 @@
 			<!-- Contact Section  -------------->
 			<section class="contact adjust" id="contact">
 				<div class="section-title">
-					<h2>Let's say hi!</h2>
-					<p>Feel free to say hi, I'll gladly get back to you</p>
+					<h2>{{ language.contact.sectionTitle }}</h2>
+					<p>{{ language.contact.sectionText }}</p>
 				</div>
 				<div class="contactForm">
 					<form class="contact-form" @submit.prevent="sendEmail">
 						<div class="contact-first-row">
 							<input type="text" name="user_name" placeholder="Name" />
-							<input
-								type="text"
-								name="user_email"
-								placeholder="Email Address"
-							/>
+							<input type="text" name="user_email" placeholder="Email" />
 						</div>
 						<div class="contact-second-row">
 							<textarea placeholder="Message" name="message"></textarea>
@@ -301,9 +266,7 @@
 							<div class="close" @click="hideModal">
 								<font-awesome-icon :icon="['fas', 'times']" />
 							</div>
-							Thank you for your E-mail. <br />
-							<br />
-							I'll get back to you ASAP
+							{{ language.mailSent.sectionText }}
 						</div>
 					</div>
 					<div id="overlay" @click="hideModal" :class="overlayClass"></div>
@@ -318,11 +281,13 @@ import emailjs from 'emailjs-com';
 import projectList from './../assets/informations/projects.json';
 import diplomas from './../assets/informations/diplomas.json';
 import jobs from './../assets/informations/jobs.json';
+import language from './../assets/informations/language.json';
 
 export default {
 	name: 'Home',
 	data() {
 		return {
+			language: language[0].fr,
 			modalState: false,
 			activeState: null,
 			projectShowed: null,
@@ -332,6 +297,8 @@ export default {
 			publicPath: import.meta.env.BASE_URL,
 			studyBanner: 'showBanner',
 			workBanner: 'hideBanner',
+			frenchLanguage: 'showLanguage',
+			englishLanguage: 'hideLanguage',
 		};
 	},
 	created() {
@@ -384,6 +351,21 @@ export default {
 				this.diplomas = jobs;
 			} else {
 				this.diplomas = diplomas;
+			}
+		},
+		toggleLanguage() {
+			this.englishLanguage =
+				this.englishLanguage === 'showLanguage'
+					? 'hideLanguage'
+					: 'showLanguage';
+			this.frenchLanguage =
+				this.frenchLanguage === 'showLanguage'
+					? 'hideLanguage'
+					: 'showLanguage';
+			if (this.language.navigation.home === 'Home') {
+				this.language = language[0].fr;
+			} else {
+				this.language = language[0].en;
 			}
 		},
 	},

@@ -28,6 +28,25 @@
 			text-transform: uppercase;
 			letter-spacing: 1px;
 		}
+		.language {
+			position: absolute;
+			right: 20%;
+			display: flex;
+			flex-direction: horizontal;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			.showLanguage {
+				font-size: 1.2em;
+				opacity: 1;
+				cursor: pointer;
+			}
+			.hideLanguage {
+				font-size: 0.9em;
+				opacity: 0.5;
+				cursor: pointer;
+			}
+		}
 		.toggle {
 			position: relative;
 			width: 60px;

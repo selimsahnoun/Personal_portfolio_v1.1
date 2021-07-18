@@ -1,0 +1,154 @@
+[
+	{
+		"fr": {
+			"navigation": {
+				"home": "Accueil",
+				"aboutMe": "A propos",
+				"technologies": "Technologies",
+				"projects": "Projets",
+				"contact": "Contact"
+			},
+			"banner": {
+				"bannerContent": "Je suis ingénieur de formation, développeur Fullstack, passionné de finance et de blockchain"
+			},
+			"aboutMe": {
+				"sectionTitle": "A Propos",
+				"sectionText": "Bonjour ! Bienvenue sur mon site. \n \n Je m'appelle Selim, né en Tunisie et je vis actuellement à Paris.\n \n Je suis ingénieur génie civil de formation. Je me suis spécialisé en finance par la suite.\n \n L'année dernière, j'ai poursuivi 2 formations de développement informatique, une en Javascript Fullstack, l'autre en Blockchain.\n \n Je travaille actuellement en freelance et je suis à la recherche d'un poste en Front End Et/Ou en Back End"
+			},
+			"technologies": {
+				"sectionTitle": "Technologies",
+				"sectionText": "Je peux travailler avec toutes ces technologies. J'ai produit un projet (personnel ou en freelance) avec chacun",
+				"list": [
+					{
+						"techTitle": "Javascript",
+						"techText": "Autodidacte au départ, j'ai par la suite poursuivi le bootcamp HackReactor",
+						"techImage": "technologies_1.png",
+						"ImgStyle": "border: 1px solid rgba(0, 0, 0, 0.19)"
+					},
+					{
+						"techTitle": "Python",
+						"techText": "Autodidacte, j'ai créé une app de crypto-monnaie en réproduisant la technologie Blockchain (projet 02)",
+						"techImage": "technologies_2.jpeg",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Angular",
+						"techText": "Autodidacte, j'ai créé une app Front End qui fait des appel Google API pour reproduire une demande d'Uber",
+						"techImage": "technologies_3.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Vue JS",
+						"techText": "Audidacte, le framework que j'apprécie le plus. Je code principalement en Vue 2 et 3",
+						"techImage": "technologies_4.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "solidity",
+						"techText": "Suite à un bootcamp en développement Blockchain, je travaille actuellement sur une app d'échange de parts immobiliers tokénisés",
+						"techImage": "technologies_7.svg",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "React JS",
+						"techText": "Premier framework que j'ai pratiqué. J'ai créé plusieurs app avec lors du bootcamp HackReactor",
+						"techImage": "technologies_5.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Mongo DB",
+						"techText": "J'ai de la pratique avec cette base de données, voir project 3",
+						"techImage": "technologies_6.png",
+						"ImgStyle": ""
+					}
+				]
+			},
+			"projects": {
+				"sectionTitle": "Projets",
+				"sectionText": "Projets conçus ou en cours, en tant qu'exercice personnel ou en Freelance"
+			},
+			"contact": {
+				"sectionTitle": "Faisons connaissance !",
+				"sectionText": "Envoyez moi un petit message, je reviendrai vers vous avec plaisir !"
+			},
+			"mailSent": {
+				"sectionText": "Merci pour votre message. \n \n Je reviens vers vous dès que possible."
+			}
+		},
+		"en": {
+			"navigation": {
+				"home": "Home",
+				"aboutMe": "About me",
+				"technologies": "Technologies",
+				"projects": "Projects",
+				"contact": "Contact"
+			},
+			"banner": {
+				"bannerContent": "I'm an engineer, fullstack web developper, passionate about finance and blockchain technology"
+			},
+			"aboutMe": {
+				"sectionTitle": "About me",
+				"sectionText": "Hey there! Welcome to my website. \n \n I'm Selim, I was born in Tunisia and currently living Paris.\n \n I am a civil engineer who specialized in finance. Last year, I decided to learn how to code. It's been an amazing journey.\n \n I'm currently working freelance and looking for a job as a developper (Front end And/Or Back end)"
+			},
+			"technologies": {
+				"sectionTitle": "Technologies",
+				"sectionText": "I can work with these technologies and I've built projects with each of those.",
+				"list": [
+					{
+						"techTitle": "Javascript",
+						"techText": "Self taught at first then I did a hackreactor bootcamp.",
+						"techImage": "technologies_1.png",
+						"ImgStyle": "border: 1px solid rgba(0, 0, 0, 0.19)"
+					},
+					{
+						"techTitle": "Python",
+						"techText": "Self taught, I built a blockchain crypto-currency ui, with Python (project 02)",
+						"techImage": "technologies_2.jpeg",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Angular",
+						"techText": "Self taught, I built a mock Front End Uber project, with a Google API call",
+						"techImage": "technologies_3.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Vue JS",
+						"techText": "Self taught, the framework that I appreciate the most, I write mainly with Vue 2 & 3",
+						"techImage": "technologies_4.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "solidity",
+						"techText": "After a BlockChain bootcamp in 2020, I built a real estate token exchange plateform (project 03)",
+						"techImage": "technologies_7.svg",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "React JS",
+						"techText": "First framework that I practiced and did several projects with it during the hackreactor bootcamp",
+						"techImage": "technologies_5.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Mongo DB",
+						"techText": "Database that I appreciate the most. Project 03 was done with Mongo Atlas as a database",
+						"techImage": "technologies_6.png",
+						"ImgStyle": ""
+					}
+				]
+			},
+			"projects": {
+				"sectionTitle": "projects",
+				"sectionText": "Projects I've done so far. Either by personal work or freelancing."
+			},
+			"contact": {
+				"sectionTitle": "Let's say hi!",
+				"sectionText": "Feel free to say hi, I'll gladly get back to you"
+			},
+			"mailSent": {
+				"sectionText": "Thank you for your E-mail. \n \n I'll get back to you ASAP"
+			}
+		}
+	}
+]

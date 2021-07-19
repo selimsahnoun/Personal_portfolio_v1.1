@@ -57,8 +57,20 @@
 					},
 					{
 						"techTitle": "Mongo DB",
-						"techText": "J'ai de la pratique avec cette base de données, voir project 3",
+						"techText": "Pratiqué lors du bootcamp, je développe le projet 3 et 4 avec.",
 						"techImage": "technologies_6.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Postgres",
+						"techText": "Pratiqué lors du bootcamp pour le projet de thèse, marketplace de produits de magie",
+						"techImage": "technologies_8.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Node JS",
+						"techText": "Pratiqué dans tous mes projets et lors du bootcamp",
+						"techImage": "technologies_9.png",
 						"ImgStyle": ""
 					}
 				]
@@ -134,6 +146,18 @@
 						"techTitle": "Mongo DB",
 						"techText": "Database that I appreciate the most. Project 03 was done with Mongo Atlas as a database",
 						"techImage": "technologies_6.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Postgres",
+						"techText": "I used postgres to build the bootcamp thesis project, a magic items marketplace.",
+						"techImage": "technologies_8.png",
+						"ImgStyle": ""
+					},
+					{
+						"techTitle": "Node JS",
+						"techText": "Practiced in most of my projects, and during the bootcamp",
+						"techImage": "technologies_9.png",
 						"ImgStyle": ""
 					}
 				]

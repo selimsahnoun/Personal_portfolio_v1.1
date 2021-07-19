@@ -4,27 +4,27 @@
 			<ul>
 				<li>
 					<a href="#home-banner" @click="activeClass">{{
-						language.navigation.home
+						infos.navigation.home
 					}}</a>
 				</li>
 				<li>
 					<a href="#about-me" @click="activeClass">{{
-						language.navigation.aboutMe
+						infos.navigation.aboutMe
 					}}</a>
 				</li>
 				<li>
 					<a href="#technologies" @click="activeClass">{{
-						language.navigation.technologies
+						infos.navigation.technologies
 					}}</a>
 				</li>
 				<li>
 					<a href="#projects" @click="activeClass">{{
-						language.navigation.projects
+						infos.navigation.projects
 					}}</a>
 				</li>
 				<li>
 					<a href="#contact" @click="activeClass">{{
-						language.navigation.contact
+						infos.navigation.contact
 					}}</a>
 				</li>
 			</ul>
@@ -53,7 +53,7 @@
 					<h3>Selim Sahnoun</h3>
 
 					<p>
-						{{ language.banner.bannerContent }}
+						{{ infos.banner.bannerContent }}
 					</p>
 					<a
 						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/cv_selim_sahnoun.pdf?alt=media&token=ba0a0ad9-e250-42b6-9dc5-9ef22cabfcf0"
@@ -82,12 +82,12 @@
 			<!-- About Me Section  -------------->
 			<section class="about-me adjust" id="about-me">
 				<div class="section-title">
-					<h2>{{ language.aboutMe.sectionTitle }}</h2>
+					<h2>{{ infos.aboutMe.sectionTitle }}</h2>
 				</div>
 				<div class="about-content">
 					<div class="about-text-box">
 						<p>
-							{{ language.aboutMe.sectionText }}
+							{{ infos.aboutMe.sectionText }}
 						</p>
 					</div>
 					<div class="studies-container">
@@ -126,15 +126,15 @@
 			<!-- Technologies Section  ---------->
 			<section class="technologies adjust" id="technologies">
 				<div class="section-title">
-					<h2>{{ language.technologies.sectionTitle }}</h2>
+					<h2>{{ infos.technologies.sectionTitle }}</h2>
 					<p>
-						{{ language.technologies.sectionText }}
+						{{ infos.technologies.sectionText }}
 					</p>
 				</div>
 				<div class="tech-content">
 					<div
 						class="techBox"
-						v-for="(tech, index) in language.technologies.list"
+						v-for="(tech, index) in infos.technologies.list"
 						:key="index"
 					>
 						<img
@@ -145,41 +145,14 @@
 						<h2>{{ tech.techTitle }}</h2>
 						<p>{{ tech.techText }}</p>
 					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/postgres.png" alt="" />
-						<h2>Postgres</h2>
-						<p>
-							I used postgres to build the
-							<a
-								href="https://github.com/selimsahnoun/skymage/tree/main/backend"
-								target="_blank"
-								rel="noopener noreferrer"
-								>thesis project</a
-							>, a magic items marketplace.
-						</p>
-					</div>
-					<div class="techBox">
-						<img src="./../assets/pictures/technologies/node.png" alt="" />
-						<h2>NODE JS</h2>
-						<p>
-							Very diligent on the good practices with Node, I'm learning to
-							implement the
-							<a
-								href="https://softwareontheroad.com/ideal-nodejs-project-structure/?utm_source=devto&utm_medium=post"
-								target="_blank"
-								rel="noopener noreferrer"
-								>"bullet proof method"</a
-							>
-						</p>
-					</div>
 				</div>
 			</section>
 			<!-- Projects Section  -------------->
 			<section class="projects adjust" id="projects">
 				<div class="section-title">
-					<h2>{{ language.projects.sectionTitle }}</h2>
+					<h2>{{ infos.projects.sectionTitle }}</h2>
 					<p>
-						{{ language.projects.sectionText }}
+						{{ infos.projects.sectionText }}
 					</p>
 				</div>
 				<div class="project-container">
@@ -243,8 +216,8 @@
 			<!-- Contact Section  -------------->
 			<section class="contact adjust" id="contact">
 				<div class="section-title">
-					<h2>{{ language.contact.sectionTitle }}</h2>
-					<p>{{ language.contact.sectionText }}</p>
+					<h2>{{ infos.contact.sectionTitle }}</h2>
+					<p>{{ infos.contact.sectionText }}</p>
 				</div>
 				<div class="contactForm">
 					<form class="contact-form" @submit.prevent="sendEmail">
@@ -266,7 +239,7 @@
 							<div class="close" @click="hideModal">
 								<font-awesome-icon :icon="['fas', 'times']" />
 							</div>
-							{{ language.mailSent.sectionText }}
+							{{ infos.mailSent.sectionText }}
 						</div>
 					</div>
 					<div id="overlay" @click="hideModal" :class="overlayClass"></div>
@@ -281,18 +254,19 @@ import emailjs from 'emailjs-com';
 import projectList from './../assets/informations/projects.json';
 import diplomas from './../assets/informations/diplomas.json';
 import jobs from './../assets/informations/jobs.json';
-import language from './../assets/informations/language.json';
+import infos from './../assets/informations/infos.json';
 
 export default {
 	name: 'Home',
 	data() {
 		return {
-			language: language[0].fr,
+			language: 'fr',
+			infos: infos[0].fr,
 			modalState: false,
 			activeState: null,
 			projectShowed: null,
-			projectList: projectList,
-			diplomas: diplomas,
+			projectList: projectList[0].fr,
+			diplomas: diplomas[0].fr,
 			overlayClass: '',
 			publicPath: import.meta.env.BASE_URL,
 			studyBanner: 'showBanner',
@@ -302,7 +276,7 @@ export default {
 		};
 	},
 	created() {
-		this.projectShowed = projectList[0];
+		this.projectShowed = projectList[0].fr[0];
 	},
 	methods: {
 		showSchool(link) {
@@ -348,9 +322,10 @@ export default {
 			this.workBanner =
 				this.workBanner === 'showBanner' ? 'hideBanner' : 'showBanner';
 			if (this.diplomas[0].diplomaSchool === 'E.N.I.T.') {
-				this.diplomas = jobs;
+				this.diplomas = this.language === 'fr' ? jobs[0].fr : jobs[0].en;
 			} else {
-				this.diplomas = diplomas;
+				this.diplomas =
+					this.language === 'fr' ? diplomas[0].fr : diplomas[0].en;
 			}
 		},
 		toggleLanguage() {
@@ -362,10 +337,26 @@ export default {
 				this.frenchLanguage === 'showLanguage'
 					? 'hideLanguage'
 					: 'showLanguage';
-			if (this.language.navigation.home === 'Home') {
-				this.language = language[0].fr;
+			if (this.language === 'en') {
+				this.infos = infos[0].fr;
+				this.projectList = projectList[0].fr;
+				this.projectShowed = projectList[0].fr[0];
+				this.language = 'fr';
+				if (this.diplomas[0].diplomaSchool === 'E.N.I.T.') {
+					this.diplomas = diplomas[0].fr;
+				} else {
+					this.diplomas = jobs[0].fr;
+				}
 			} else {
-				this.language = language[0].en;
+				this.language = 'en';
+				this.infos = infos[0].en;
+				this.projectList = projectList[0].en;
+				this.projectShowed = projectList[0].en[0];
+				if (this.diplomas[0].diplomaSchool === 'E.N.I.T.') {
+					this.diplomas = diplomas[0].en;
+				} else {
+					this.diplomas = jobs[0].en;
+				}
 			}
 		},
 	},

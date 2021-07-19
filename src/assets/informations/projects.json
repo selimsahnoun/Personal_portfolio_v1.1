@@ -1,45 +1,94 @@
 [
 	{
-		"id": 0,
-		"descriptionTitle": "Mock Uber App",
-		"descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
-		"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
-		"linkUrl": "None",
-		"githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
-		"techList": ["Angular", "Google API", "Bootstrap"]
-	},
-	{
-		"id": 1,
-		"descriptionTitle": "Pycoin Crypto-currency",
-		"descriptionText": "A Fullstack App built with Python, that uses the blockchain technology to register transactions of a crypto-currency",
-		"videoEmbedSrc": "https://www.youtube.com/embed/AJNHsBMKJDQ",
-		"linkUrl": "None",
-		"githubUrl": "https://github.com/selimsahnoun/Blockchain-crypto-pycoin",
-		"techList": ["Python", "Vue 2", "Axios", "Bootstrap"]
-	},
-	{
-		"id": 2,
-		"descriptionTitle": "Etherente",
-		"descriptionText": "A Fullstack Dapp that is made to exchage ERC 20 Tokens. It is a \"kickstarter\" to buy Real Estate goods through its tokenisation",
-		"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
-		"linkUrl": "Work in progress",
-		"githubUrl": "https://github.com/selimsahnoun/Real-Estate-Token-Exchange-Fullstack",
-		"techList": [
-			"Vue 3",
-			"Vuex",
-			"CSS/Rellax",
-			"Express JS",
-			"Solidity",
-			"Mongo DB"
+		"en": [
+			{
+				"id": 0,
+				"descriptionTitle": "Mock Uber App",
+				"descriptionText": "A mock Uber Front End App for educational purposes. \n It makes Google API calls to give the quickest route from Point A to Point B and a price according to the car type.",
+				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"linkUrl": "None",
+				"githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
+				"techList": ["Angular", "Google API", "Bootstrap"]
+			},
+			{
+				"id": 1,
+				"descriptionTitle": "Pycoin Crypto-currency",
+				"descriptionText": "A Fullstack App built with Python, that uses the blockchain technology to register transactions of a crypto-currency",
+				"videoEmbedSrc": "https://www.youtube.com/embed/AJNHsBMKJDQ",
+				"linkUrl": "None",
+				"githubUrl": "https://github.com/selimsahnoun/Blockchain-crypto-pycoin",
+				"techList": ["Python", "Vue 2", "Axios", "Bootstrap"]
+			},
+			{
+				"id": 2,
+				"descriptionTitle": "Etherente",
+				"descriptionText": "A Fullstack Dapp that is made to exchage ERC 20 Tokens. It is a \"kickstarter\" to buy Real Estate goods through its tokenisation",
+				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"linkUrl": "Work in progress",
+				"githubUrl": "https://github.com/selimsahnoun/Real-Estate-Token-Exchange-Fullstack",
+				"techList": [
+					"Vue 3",
+					"Vuex",
+					"CSS/Rellax",
+					"Express JS",
+					"Solidity",
+					"Mongo DB"
+				]
+			},
+			{
+				"id": 3,
+				"descriptionTitle": "Onyria",
+				"descriptionText": "Current Freelance Project. A web page for a start up that proposes guided cultural experiences",
+				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"linkUrl": "Work in progress",
+				"githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
+				"techList": ["Vue 3", "Vuex", "CSS", "Express JS", "Mongo DB"]
+			}
+		],
+		"fr": [
+			{
+				"id": 0,
+				"descriptionTitle": "Mock Uber App",
+				"descriptionText": "Un projet pour un apprentissage personnel. \n Cette app fait appel à plusieurs Google API our donner la route la plus rapide du point A au point B",
+				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"linkUrl": "None",
+				"githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
+				"techList": ["Angular", "Google API", "Bootstrap"]
+			},
+			{
+				"id": 1,
+				"descriptionTitle": "Pycoin Crypto-currency",
+				"descriptionText": "Une app Fullstack qui reproduit les bases de la technologie Blockchain pour enregistrer des transactions d'une crypto-monnaie",
+				"videoEmbedSrc": "https://www.youtube.com/embed/AJNHsBMKJDQ",
+				"linkUrl": "None",
+				"githubUrl": "https://github.com/selimsahnoun/Blockchain-crypto-pycoin",
+				"techList": ["Python", "Vue 2", "Axios", "Bootstrap"]
+			},
+			{
+				"id": 2,
+				"descriptionTitle": "Etherente",
+				"descriptionText": "Une Dapp fullstack d'échange de tokens ERC20. Semblant d'un \"kickstarter\" pour acheter des biens immobilier à travers leur tokenizations",
+				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"linkUrl": "En cours",
+				"githubUrl": "https://github.com/selimsahnoun/Real-Estate-Token-Exchange-Fullstack",
+				"techList": [
+					"Vue 3",
+					"Vuex",
+					"CSS/Rellax",
+					"Express JS",
+					"Solidity",
+					"Mongo DB"
+				]
+			},
+			{
+				"id": 3,
+				"descriptionTitle": "Onyria",
+				"descriptionText": "Projet en Freelance actuel. Une page web fullstack pour une start up qui propose des visites culturelles guidées",
+				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"linkUrl": "En cours",
+				"githubUrl": "https://github.com/selimsahnoun/",
+				"techList": ["Vue 3", "Vuex", "CSS", "Express JS", "Mongo DB"]
+			}
 		]
-	},
-	{
-		"id": 3,
-		"descriptionTitle": "Onyria",
-		"descriptionText": "Current Freelance Project. A web page for a start up that proposes guided cultural experiences",
-		"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
-		"linkUrl": "Work in progress",
-		"githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
-		"techList": ["Vue 3", "Vuex", "CSS", "Express JS", "Mongo DB"]
 	}
 ]

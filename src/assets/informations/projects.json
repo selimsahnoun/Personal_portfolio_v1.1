@@ -68,7 +68,7 @@
 				"id": 2,
 				"descriptionTitle": "Etherente",
 				"descriptionText": "Une Dapp fullstack d'échange de tokens ERC20. Semblant d'un \"kickstarter\" pour acheter des biens immobilier à travers leur tokenizations",
-				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"videoEmbedSrc": "https://www.youtube.com/embed/p_aEdfhbbCc",
 				"linkUrl": "En cours",
 				"githubUrl": "https://github.com/selimsahnoun/Real-Estate-Token-Exchange-Fullstack",
 				"techList": [
@@ -84,7 +84,7 @@
 				"id": 3,
 				"descriptionTitle": "Onyria",
 				"descriptionText": "Projet en Freelance actuel. Une page web fullstack pour une start up qui propose des visites culturelles guidées",
-				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"videoEmbedSrc": "https://www.youtube.com/embed/p_aEdfhbbCc",
 				"linkUrl": "En cours",
 				"githubUrl": "https://github.com/selimsahnoun/",
 				"techList": ["Vue 3", "Vuex", "CSS", "Express JS", "Mongo DB"]

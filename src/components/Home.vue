@@ -56,7 +56,7 @@
 						{{ infos.banner.bannerContent }}
 					</p>
 					<a
-						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/cv_selim_sahnoun.pdf?alt=media&token=ba0a0ad9-e250-42b6-9dc5-9ef22cabfcf0"
+						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/2021%2007%2021%20Selim%20Sahnoun.pdf?alt=media&token=f157eb5f-ad58-47b9-b74f-43c394f8b6e1"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="cv-button"

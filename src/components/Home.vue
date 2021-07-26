@@ -56,7 +56,7 @@
 						{{ infos.banner.bannerContent }}
 					</p>
 					<a
-						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/2021%2007%2021%20Selim%20Sahnoun.pdf?alt=media&token=f157eb5f-ad58-47b9-b74f-43c394f8b6e1"
+						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/CV_Selim_SAHNOUN.pdf?alt=media&token=283a0da6-1ded-4fcb-9280-352467e852b0"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="cv-button"
@@ -74,6 +74,14 @@
 						<li>
 							<a href="#contact"
 								><font-awesome-icon :icon="['fas', 'envelope-open-text']"
+							/></a>
+						</li>
+						<li>
+							<a
+								href="https://github.com/selimsahnoun"
+								target="_blank"
+								rel="noopener noreferrer"
+								><font-awesome-icon :icon="['fab', 'github']"
 							/></a>
 						</li>
 					</ul>

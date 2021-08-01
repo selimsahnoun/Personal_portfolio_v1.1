@@ -56,7 +56,7 @@
 						{{ infos.banner.bannerContent }}
 					</p>
 					<a
-						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/CV_Selim_SAHNOUN.pdf?alt=media&token=283a0da6-1ded-4fcb-9280-352467e852b0"
+						href="https://firebasestorage.googleapis.com/v0/b/portfoliov1-1.appspot.com/o/CV_Selim_SAHNOUN.pdf?alt=media&token=db2eb908-ceb8-49ca-a570-2913e08d9c7a"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="cv-button"
@@ -237,7 +237,7 @@
 							<textarea placeholder="Message" name="message"></textarea>
 						</div>
 						<div class="contact-second-row">
-							<input type="submit" value="Send" />
+							<input type="submit" :value="sendButton" />
 						</div>
 					</form>
 				</div>
@@ -269,6 +269,8 @@ export default {
 	data() {
 		return {
 			language: 'fr',
+			sendButton: 'envoyer',
+			contactName: 'Name',
 			infos: infos[0].fr,
 			modalState: false,
 			activeState: null,
@@ -350,6 +352,8 @@ export default {
 				this.projectList = projectList[0].fr;
 				this.projectShowed = projectList[0].fr[0];
 				this.language = 'fr';
+				this.sendButton = 'envoyer';
+				this.contactName = 'Nom';
 				if (this.diplomas[0].diplomaSchool === 'E.N.I.T.') {
 					this.diplomas = diplomas[0].fr;
 				} else {
@@ -357,6 +361,8 @@ export default {
 				}
 			} else {
 				this.language = 'en';
+				this.sendButton = 'send';
+				this.contactName = 'Name';
 				this.infos = infos[0].en;
 				this.projectList = projectList[0].en;
 				this.projectShowed = projectList[0].en[0];

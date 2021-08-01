@@ -230,7 +230,7 @@
 				<div class="contactForm">
 					<form class="contact-form" @submit.prevent="sendEmail">
 						<div class="contact-first-row">
-							<input type="text" name="user_name" placeholder="Name" />
+							<input type="text" name="user_name" :placeholder="contactName" />
 							<input type="text" name="user_email" placeholder="Email" />
 						</div>
 						<div class="contact-second-row">

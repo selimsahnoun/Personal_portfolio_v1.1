@@ -270,7 +270,7 @@ export default {
 		return {
 			language: 'fr',
 			sendButton: 'envoyer',
-			contactName: 'Name',
+			contactName: 'Nom',
 			infos: infos[0].fr,
 			modalState: false,
 			activeState: null,

@@ -22,8 +22,8 @@
 			{
 				"id": 2,
 				"descriptionTitle": "Etherente",
-				"descriptionText": "A Fullstack Dapp that is made to exchage ERC 20 Tokens. It is a \"kickstarter\" to buy Real Estate goods through its tokenisation",
-				"videoEmbedSrc": "https://www.youtube.com/embed/2WBiUwKl7Vw",
+				"descriptionText": "A Fullstack Dapp that is made to exchage ERC 20 Tokens. It is a \"kickstarter\" to buy Real Estate goods through its tokenisation and an exchange plateform",
+				"videoEmbedSrc": "https://www.youtube.com/embed/3WfImy655K8",
 				"linkUrl": "Work in progress",
 				"githubUrl": "https://github.com/selimsahnoun/Real-Estate-Token-Exchange-Fullstack",
 				"techList": [

@@ -87,50 +87,6 @@
 					</ul>
 				</div>
 			</section>
-			<!-- About Me Section  -------------->
-			<section class="about-me adjust" id="about-me">
-				<div class="section-title">
-					<h2>{{ infos.aboutMe.sectionTitle }}</h2>
-				</div>
-				<div class="about-content">
-					<div class="about-text-box">
-						<p>
-							{{ infos.aboutMe.sectionText }}
-						</p>
-					</div>
-					<div class="studies-container">
-						<div class="banner">
-							<font-awesome-icon
-								:icon="['fas', 'user-graduate']"
-								:class="studyBanner"
-								@click="toggleExperience"
-							/>
-							/
-							<font-awesome-icon
-								:icon="['fas', 'briefcase']"
-								:class="workBanner"
-								@click="toggleExperience"
-							/>
-						</div>
-						<div class="studies-wrapper">
-							<div
-								class="diploma-box"
-								v-for="(diploma, index) in diplomas"
-								:key="index"
-								@click="showSchool(diploma.diplomaLink)"
-							>
-								<div class="diploma-year">{{ diploma.diplomaYear }}</div>
-								<div class="diploma-title">{{ diploma.diplomaTitle }}</div>
-								<div class="diploma-town">{{ diploma.diplomaTown }}</div>
-								<div class="diploma-school">{{ diploma.diplomaSchool }}</div>
-								<div class="diploma-text">
-									<p>{{ diploma.diplomaText }}</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 			<!-- Technologies Section  ---------->
 			<section class="technologies adjust" id="technologies">
 				<div class="section-title">
@@ -215,6 +171,50 @@
 										rel="noopener noreferrer"
 										>Click here</a
 									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- About Me Section  -------------->
+			<section class="about-me adjust" id="about-me">
+				<div class="section-title">
+					<h2>{{ infos.aboutMe.sectionTitle }}</h2>
+				</div>
+				<div class="about-content">
+					<div class="about-text-box">
+						<p>
+							{{ infos.aboutMe.sectionText }}
+						</p>
+					</div>
+					<div class="studies-container">
+						<div class="banner">
+							<font-awesome-icon
+								:icon="['fas', 'user-graduate']"
+								:class="studyBanner"
+								@click="toggleExperience"
+							/>
+							/
+							<font-awesome-icon
+								:icon="['fas', 'briefcase']"
+								:class="workBanner"
+								@click="toggleExperience"
+							/>
+						</div>
+						<div class="studies-wrapper">
+							<div
+								class="diploma-box"
+								v-for="(diploma, index) in diplomas"
+								:key="index"
+								@click="showSchool(diploma.diplomaLink)"
+							>
+								<div class="diploma-year">{{ diploma.diplomaYear }}</div>
+								<div class="diploma-title">{{ diploma.diplomaTitle }}</div>
+								<div class="diploma-town">{{ diploma.diplomaTown }}</div>
+								<div class="diploma-school">{{ diploma.diplomaSchool }}</div>
+								<div class="diploma-text">
+									<p>{{ diploma.diplomaText }}</p>
 								</div>
 							</div>
 						</div>

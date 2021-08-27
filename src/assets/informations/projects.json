@@ -39,7 +39,7 @@
 				"id": 3,
 				"descriptionTitle": "Onyria",
 				"descriptionText": "Current Freelance Project. A web page for a start up that proposes guided cultural experiences",
-				"videoEmbedSrc": "https://youtu.be/p_aEdfhbbCc",
+				"videoEmbedSrc": "https://www.youtube.com/embed/p_aEdfhbbCc",
 				"linkUrl": "Work in progress",
 				"githubUrl": "https://github.com/selimsahnoun/Fake-Uber",
 				"techList": ["Vue 3", "Vuex", "CSS", "Express JS", "Mongo DB"]
